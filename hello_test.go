@@ -1,6 +1,9 @@
 package main
 
-import "testing"
+import (
+    "fmt"
+    "testing"
+)
 
 func TestHello(t *testing.T) {
     
@@ -36,4 +39,8 @@ func TestHello(t *testing.T) {
     })
 }
 
+func ExampleHello() {
+    fmt.Println(Hello("",""))
+    // Output: Hello, World
+}
 
